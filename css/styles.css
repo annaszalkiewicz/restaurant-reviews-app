@@ -55,7 +55,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 .header {
   width: 100%;
   background-color: #123754;
-  padding: 1em;
+  padding: 1em 0;
 }
 .title {
   font-family: 'Pacifico', cursive;
