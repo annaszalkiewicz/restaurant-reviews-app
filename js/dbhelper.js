@@ -159,6 +159,7 @@ class DBHelper {
   static mapMarkerForRestaurant(restaurant, map) {
     const marker = new google.maps.Marker({
       position: restaurant.latlng,
+      icon: '../img/restaurant-icon.png',
       title: restaurant.name,
       url: DBHelper.urlForRestaurant(restaurant),
       map: map,
