@@ -31,15 +31,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 }
-#footer {
-  background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
-  letter-spacing: 1px;
-  padding: 25px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 
 /* ====================== Navigation ====================== */
 
@@ -95,7 +87,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   width: 100%;
   background-color: #ccc;
 }
-/* ====================== Restaurant Filtering ====================== */
+/* ================= Restaurant Filtering ================= */
 .filter-options {
   width: 100%;
   background-color: #28506e;
@@ -120,7 +112,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   border-radius: 3px;
 }
 
-/* ====================== Restaurant Listing ====================== */
+/* =================== Restaurant Listing =================== */
 #restaurants-list {
   list-style-type: none;
   background-color: #f3f3f3;
@@ -177,7 +169,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   letter-spacing: 2px;
 }
 
-/* ====================== Restaurant Details ====================== */
+/* =================== Restaurant Details =================== */
 .inside header {
   position: fixed;
   top: 0;
@@ -253,7 +245,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -267,4 +258,21 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #123754;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 2em;
+  text-align: center;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #ab8e37;
 }
