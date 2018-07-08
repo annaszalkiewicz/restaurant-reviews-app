@@ -275,3 +275,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
     font-size: 1.5em;
   }
 }
+@media screen and (min-width: 375px) {
+  #restaurants-list li {
+    width: 350px;
+  }
+}
