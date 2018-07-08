@@ -348,4 +348,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
     font-weight: bold;
     letter-spacing: 2px;
   }
+  .inside #map-container {
+    height: 340px;
+  }
 }
