@@ -365,13 +365,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   }
 } 
 @media screen and (min-width: 1280px) {
-  #reviews-list > li > p:nth-child(3) {
-    right: 3em;
+  #restaurant-container, #reviews-container {
+    max-width: 1280px;
+    margin: 0 auto;
   }
-}
-@media screen and (min-width: 1920px) {
   #reviews-list > li > p:nth-child(3) {
-    right: 4em;
+    right: 21em;
     width: 110px;
   }
 }
