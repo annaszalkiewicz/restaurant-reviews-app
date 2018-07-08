@@ -263,3 +263,15 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 .footer a:hover {
   color: #ab8e37;
 }
+
+@media screen and (min-width: 360px) {
+  #map {
+    height: 510px;
+  }
+  #restaurants-list li {
+    width: 330px;
+  }
+  #restaurants-list li h1 {
+    font-size: 1.5em;
+  }
+}
