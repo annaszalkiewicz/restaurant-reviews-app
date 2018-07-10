@@ -31,6 +31,20 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 }
+.skip-link {
+  position: absolute;
+  top: -4em;
+  left: 0;
+  background-color: #836715;
+  color: #fff;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+  box-shadow: 0 0 10px #486d8a;
+}
 
 
 /* ====================== Navigation ====================== */
