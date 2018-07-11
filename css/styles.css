@@ -62,8 +62,6 @@ details, footer, header, nav, section {
     list-style: none;
     background-color: #fff;
     margin: 0;
-    width: 100%;
-
 }
 
 /* Display list items side by side */
@@ -138,7 +136,9 @@ details, footer, header, nav, section {
 }
 .select-label {
   color: #fff;
-  margin-left: 1em;
+  display: block;
+  padding-bottom: 0.5em;
+  text-align: center;
 }
 
 /* =================== Restaurant Listing =================== */
