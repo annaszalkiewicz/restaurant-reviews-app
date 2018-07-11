@@ -136,6 +136,10 @@ details, footer, header, nav, section {
   outline: none;
   border: solid 5px #d6ba68;
 }
+.select-label {
+  color: #fff;
+  margin-left: 1em;
+}
 
 /* =================== Restaurant Listing =================== */
 #restaurants-list {
