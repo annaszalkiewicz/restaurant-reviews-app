@@ -226,6 +226,9 @@ details, footer, header, nav, section {
   padding-top: 1em;
   font-weight: bold;
 }
+.restaurant-hours-heading, .restaurant-address {
+  padding: 1em;
+}
 #restaurant-hours {
   padding: 1em 0;
   min-width: 300px;
@@ -398,7 +401,7 @@ details, footer, header, nav, section {
     padding: 1em 1em 1em 3em;
   }
   #restaurant-hours {
-    padding: 0 1em 1em 3em;
+    padding: 1em 1em 1em 3em;
   }
   #reviews-list > li > p:nth-child(3) {
     right: 2.5em;
