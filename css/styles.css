@@ -11,20 +11,10 @@ body {
   font-weight: 400;
   color: #000;
 }
-
-/* a {
-	color: orange;
-	text-decoration: none;
-} */
-/* a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
-} */
 a img{
 	border: none 0px #fff;
 }
-
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+details, footer, header, nav, section {
 	display: block;
 }
 #maincontent {
@@ -63,6 +53,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #fff;
   text-decoration: none;
 }
+.title a:focus {
+  color: #d6ba68;
+  outline: none;
+}
 #breadcrumb {
     padding: 1em;
     list-style: none;
@@ -95,11 +89,20 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
     color: #01447e;
     text-decoration: underline;
 }
+#breadcrumb li a:focus {
+  color: #d6ba68;
+}
 /* ====================== Map ====================== */
 #map {
   height: 400px;
   width: 100%;
   background-color: #ccc;
+}
+#map > div > div > div:nth-child(3):focus {
+  outline: #d6ba68;
+}
+#map > div > div > div:nth-child(4):focus {
+  color: #d6ba68;
 }
 /* ================= Restaurant Filtering ================= */
 .filter-options {
@@ -114,6 +117,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   padding: 2em;
 }
+.filter-header:focus {
+  color: #d6ba68;
+  outline: none;
+}
 .filter-options select {
   background-color: white;
   border: 1px solid #000;
@@ -124,6 +131,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   width: 200px;
   margin: 0 auto 1em auto;
   border-radius: 3px;
+}
+.filter-options select:focus {
+  outline: none;
+  border: solid 5px #d6ba68;
 }
 
 /* =================== Restaurant Listing =================== */
@@ -181,6 +192,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.view-details:focus {
+  outline: 0;
+  border: solid 5px #d6ba68;
 }
 
 /* =================== Restaurant Details =================== */
@@ -290,6 +305,13 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 .footer a:hover {
   color: #ab8e37;
+}
+.copyright:focus {
+  outline: 0;
+  color: #d6ba68;
+}
+:focus {
+  outline: none !important;
 }
 
 @media screen and (min-width: 360px) {
