@@ -80,6 +80,9 @@ window.initMap = () => {
 		center: loc,
 		scrollwheel: false
 	});
+	google.maps.event.addListenerOnce(map, 'idle', () => {
+		document.getElementsByTagName('iframe')[0].title = 'Google  Maps';
+	});
 	updateRestaurants();
 };
 

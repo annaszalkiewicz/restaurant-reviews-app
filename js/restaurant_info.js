@@ -16,6 +16,9 @@ window.initMap = () => {
 			});
 			fillBreadcrumb();
 			DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
+			google.maps.event.addListenerOnce(map, 'idle', () => {
+				document.getElementsByTagName('iframe')[0].title = 'Restaurant on Google Maps';
+			});
 		}
 	});
 };
