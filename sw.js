@@ -34,7 +34,9 @@ self.addEventListener('install', (event) => {
 		'js/main.js',
 		'js/restaurant_info.js',
 		'index.html',
-		'restaurant.html'
+		'restaurant.html',
+		'https://fonts.googleapis.com/css?family=Montserrat:300,400',
+		'https://fonts.googleapis.com/css?family=Pacifico'
 	];
 
 	event.waitUntil(
