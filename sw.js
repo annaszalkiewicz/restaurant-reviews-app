@@ -1,7 +1,3 @@
-self.addEventListener('fetch', (event) => {
-	console.log(event.request);
-});
-
 // Instal cache
 
 self.addEventListener('install', (event) => {
@@ -42,6 +38,19 @@ self.addEventListener('install', (event) => {
 	event.waitUntil(
 		caches.open('rra-v1').then((cache) => {
 			return cache.addAll(urlToCache);
+		})
+	);
+});
+
+// Show content from cache
+
+self.addEventListener('fetch', (event) => {
+	event.respondWith(
+		caches.match(event.request).then((response) => {
+			if (response) {
+				return response;
+			}
+			return fetch(event.request);
 		})
 	);
 });
