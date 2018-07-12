@@ -223,14 +223,16 @@ details, footer, header, nav, section {
 	width: 100%;
 }
 #restaurant-address {
-  padding-top: 1em;
+  padding: 1em;
   font-weight: bold;
 }
 .restaurant-hours-heading, .restaurant-address {
   padding: 1em;
+  color: #836715;
+  background-color: #fff;
 }
 #restaurant-hours {
-  padding: 1em 0;
+  padding: 1em;
   min-width: 300px;
 }
 #restaurant-cuisine {
@@ -246,8 +248,10 @@ details, footer, header, nav, section {
   margin: 0 auto;
   width: 95%;
 }
-#reviews-container {
-  border-top: solid 1px #aaa;
+.restaurant-details {
+  margin: 0 auto;
+  width: 95%;
+  box-shadow: 0 0 20px #aaa;
 }
 #reviews-container h2 {
   color: #836715;
@@ -364,7 +368,7 @@ details, footer, header, nav, section {
   #restaurants-list > li > p:nth-child(4) {
     height: 3em;
   }
-  #restaurant-container {
+  .restaurant-details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
