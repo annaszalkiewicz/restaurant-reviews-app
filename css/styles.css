@@ -201,6 +201,12 @@ details, footer, header, nav, section {
   outline: 0;
   border: solid 5px #d6ba68;
 }
+#reviews-list > li > p:nth-child(3):focus {
+  box-shadow: 0 0 20px #836715;
+}
+#reviews-list > li > p:nth-child(4):focus {
+  color: #836715;
+}
 
 /* =================== Restaurant Details =================== */
 
