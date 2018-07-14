@@ -1,6 +1,6 @@
 {
   "restaurants": [{
-    "id": 1,
+    "id": "mission-chinese-food",
     "name": "Mission Chinese Food",
     "url": "mission-chinese-food",
     "neighborhood": "Manhattan",
@@ -41,7 +41,7 @@
       }
     ]
   }, {
-    "id": 2,
+    "id": "emily",
     "name": "Emily",
     "url": "emily",
     "neighborhood": "Brooklyn",
@@ -82,7 +82,7 @@
       }
     ]
   }, {
-    "id": 3,
+    "id": "kang-ho-dong-baekjeong",
     "name": "Kang Ho Dong Baekjeong",
     "url": "kang-ho-dong-baekjeong",
     "neighborhood": "Manhattan",
@@ -123,7 +123,7 @@
       }
     ]
   }, {
-    "id": 4,
+    "id": "katz-s-delicatessen",
     "name": "Katz's Delicatessen",
     "url": "katzs-delicatessen",
     "neighborhood": "Manhattan",
@@ -164,7 +164,7 @@
       }
     ]
   }, {
-    "id": 5,
+    "id": "roberta-s-pizza",
     "name": "Roberta's Pizza",
     "url": "robertas-pizza",
     "neighborhood": "Brooklyn",
@@ -205,7 +205,7 @@
       }
     ]
   }, {
-    "id": 6,
+    "id": "hometown-bbq",
     "name": "Hometown BBQ",
     "url": "hometown-bbq",
     "neighborhood": "Brooklyn",
@@ -246,7 +246,7 @@
       }
     ]
   }, {
-    "id": 7,
+    "id": "superiority-burger",
     "name": "Superiority Burger",
     "url": "superiority-burger",
     "neighborhood": "Manhattan",
@@ -287,7 +287,7 @@
       }
     ]
   }, {
-    "id": 8,
+    "id": "the-dutch",
     "name": "The Dutch",
     "url": "the-dutch",
     "neighborhood": "Manhattan",
@@ -328,7 +328,7 @@
       }
     ]
   }, {
-    "id": 9,
+    "id": "mu-ramen",
     "name": "Mu Ramen",
     "url": "mu-ramen",
     "neighborhood": "Queens",
@@ -369,7 +369,7 @@
       }
     ]
   }, {
-    "id": 10,
+    "id": "casa-enrique",
     "name": "Casa Enrique",
     "url": "casa-enrique",
     "neighborhood": "Queens",
