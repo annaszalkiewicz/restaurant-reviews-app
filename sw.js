@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurant-reviews-v1.0';
+const staticCacheName = 'restaurant-reviews-v9.0';
 const urlsToCache = [
 	'/',
 	'css/styles.css',
@@ -24,14 +24,13 @@ const urlsToCache = [
 	'img/9-thumbnail.jpg',
 	'img/10-thumbnail.jpg',
 	'img/restaurant-icon.png',
-	'js/app.js',
+	'img/static-map.jpg',
+	'js/index-controller.js',
 	'js/dbhelper.js',
 	'js/main.js',
 	'js/restaurant_info.js',
 	'index.html',
-	'restaurant.html',
-	'https://fonts.googleapis.com/css?family=Montserrat:300,400',
-	'https://fonts.googleapis.com/css?family=Pacifico'
+	'restaurant.html'
 ];
 
 self.addEventListener('install', (event) => {
@@ -43,18 +42,16 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-	event.waitUntil(
-		caches.keys().then((cacheNames) => {
-			return Promise.all(
-				cacheNames.filter((cacheName) => {
-					return cacheName.startsWith('r-') &&
-					cacheName != staticCacheName;
-				}).map((cacheName) => {
-					return cache.delete(cacheName);
-				})
-			);
-		})
-	);
+	caches.keys().then((cacheNames) => {
+		return Promise.all(
+			cacheNames.filter((cacheName) => {
+				return cacheName.startsWith('restaurant-') &&
+				cacheName != staticCacheName;
+			}).map((cacheName) => {
+				return caches.delete(cacheName);
+			})
+		);
+	});
 });
 
 self.addEventListener('fetch', (event) => {
@@ -64,8 +61,6 @@ self.addEventListener('fetch', (event) => {
 				return response;
 			}
 			return fetch(event.request);
-		}).catch(() => {
-			console.log('Error to load files from cache');
 		})
 	);
 });
