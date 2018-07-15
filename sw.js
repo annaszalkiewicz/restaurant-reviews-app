@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurant-reviews-v9.0';
+const staticCacheName = 'restaurant-reviews-v13.0';
 const urlsToCache = [
 	'/',
 	'css/styles.css',
@@ -25,12 +25,21 @@ const urlsToCache = [
 	'img/10-thumbnail.jpg',
 	'img/restaurant-icon.png',
 	'img/static-map.jpg',
+	'img/icons/icon_48x48.png',
+	'img/icons/icon_96x96.png',
+	'img/icons/icon_128x128.png',
+	'img/icons/icon_144x144.png',
+	'img/icons/icon_192x192.png',
+	'img/icons/icon_256x256.png',
+	'img/icons/icon_384x384.png',
+	'img/icons/icon_512x512.png',
 	'js/index-controller.js',
 	'js/dbhelper.js',
 	'js/main.js',
 	'js/restaurant_info.js',
 	'index.html',
-	'restaurant.html'
+	'restaurant.html',
+	'manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
