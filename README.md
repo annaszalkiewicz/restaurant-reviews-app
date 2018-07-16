@@ -4,8 +4,6 @@
 
 For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
 
-
-
 ## How to run project?
 
 ### Run on local machine
@@ -41,6 +39,25 @@ If you have Python 3.x use
 python3 -m http.server 3000
 ```
 4. With your server running, visit the site: `http://localhost:3000`
+
+### Live preview
+
+[https://mywebgraphicdesign.com/restaurant-reviews-app](https://mywebgraphicdesign.com/restaurant-reviews-app)
+
+## Dependencies
+
+* Started code has been provided by Udacity.
+* [Font Montserrat on Google](https://fonts.google.com/specimen/Montserrat)
+* [Font Pacifico on Google](https://fonts.google.com/specimen/Pacifico)
+* [Gulp](https://gulpjs.com/)
+* [Gulp Autoprefixer Plugin](https://www.npmjs.com/package/gulp-autoprefixer)
+* [Gulp Browsersync](https://browsersync.io/)
+* [Babel](https://babeljs.io/)
+* [Material Icons](https://material.io/tools/icons/?style=baseline)
+
+## Contributions
+
+As this project is part of Front-End Nanodegree Program no contribution will be accepted.
 
 
 
