@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Restaurant Reviews App Project for Google Scholarphip Front-End Web Developer Nanodegree Program by Udacity">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#836715">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Pacifico" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <!-- Normalize.css for better cross-browser consistency -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="shortcut icon" href="img/restaurant-icon.png" type="image/png">
+  <title>Restaurant Info</title>
+</head>
+
+<body class="inside">
+  <a href="#restaurant-name" class="skip-link">Go to main content</a>
+  <!-- Beginning header -->
+  <header class="header">
+    <h1 class="title">
+      <a href="/">Restaurant Reviews</a>
+    </h1>
+  </header>
+  <!-- End header -->
+  <nav class="nav-breadcrumbs">
+    <!-- Beginning breadcrumb -->
+    <ul id="breadcrumb" >
+      <li><a href="/">Home</a></li>
+    </ul>
+    <!-- End breadcrumb -->
+  </nav>
+
+  <!-- Beginning main -->
+  <main id="maincontent">
+    <!-- Beginning map -->
+    <section id="map-container">
+      <div id="map"></div>
+    </section>
+    <!-- End map -->
+    <!-- Beginning restaurant -->
+    <section id="restaurant-container">
+      <h1 id="restaurant-name"></h1>
+      <div class="restaurant-details">
+        <div class="restaurant-left">
+          <img id="restaurant-img">
+        </div>
+        <div class="restaurant-right">
+          <p id="restaurant-cuisine" tabindex="0"></p>
+          <h2 class="restaurant-address">
+            Location:
+          </h2>
+          <p id="restaurant-address" tabindex="0"></p>
+          <h2 class="restaurant-hours-heading" tabindex="0">
+              Open Hours:
+          </h2>
+          <table id="restaurant-hours" tabindex="0"></table>
+        </div>
+      </div>
+    </section>
+    <!-- end restaurant -->
+    <!-- Beginning reviews -->
+    <section id="reviews-container">
+      <ul id="reviews-list"></ul>
+    </section>
+    <!-- End reviews -->
+  </main>
+  <!-- End main -->
+
+  <!-- Beginning footer -->
+  <footer id="footer" class="footer">
+      Copyright (c) 2018 <a href="https://mywebgraphicdesign.com" class="copyright">Restaurant Reviews</a> All Rights Reserved.
+    </footer>
+  <!-- End footer -->
+
+  <!-- Beginning scripts -->
+  
+  <!-- Database helpers -->
+  <script src="js/dbhelper.js"></script>
+  <!-- Main javascript file -->
+  <script src="js/restaurant_info.js"></script>
+  <!-- Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASJrpN1ORXOA9r3nAic8aYyWLx1s26V1A&callback=initMap"
+  type="text/javascript"></script>
+  <!-- End scripts -->
+
+</body>
+
+</html>

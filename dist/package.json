@@ -1,0 +1,16 @@
+{
+  "name": "restaurant-review-app",
+  "version": "1.0.0",
+  "description": "---\r #### _Three Stage Course Material Project - Restaurant Reviews_",
+  "main": "main.js",
+  "scripts": {
+    "serve": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anna Szalkiewicz",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1"
+  }
+}
