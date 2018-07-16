@@ -202,7 +202,7 @@ var DBHelper = function () {
 	}, {
 		key: 'imageUrlForRestaurant',
 		value: function imageUrlForRestaurant(restaurant) {
-			return './restaurant-reviews-app/img/' + restaurant.photograph;
+			return './img/' + restaurant.photograph;
 		}
 
 		/**
@@ -212,7 +212,7 @@ var DBHelper = function () {
 	}, {
 		key: 'thumbnailUrlForRestaurant',
 		value: function thumbnailUrlForRestaurant(restaurant) {
-			return './restaurant-reviews-app/img/' + restaurant.thumbnail;
+			return './img/' + restaurant.thumbnail;
 		}
 
 		/**
@@ -224,7 +224,7 @@ var DBHelper = function () {
 		value: function mapMarkerForRestaurant(restaurant, map) {
 			var marker = new google.maps.Marker({
 				position: restaurant.latlng,
-				icon: './restaurant-reviews-app/img/restaurant-icon.png',
+				icon: './img/restaurant-icon.png',
 				title: restaurant.name,
 				url: DBHelper.urlForRestaurant(restaurant),
 				map: map,
