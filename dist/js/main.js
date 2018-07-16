@@ -1,8 +1,8 @@
 'use strict';
 
 var restaurants = void 0,
-	neighborhoods = void 0,
-	cuisines = void 0;
+    neighborhoods = void 0,
+    cuisines = void 0;
 var map;
 var markers = [];
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 /**
  * Fetch all neighborhoods and set their HTML.
  */
-function fetchNeighborhoods() {
+fetchNeighborhoods = function fetchNeighborhoods() {
 	DBHelper.fetchNeighborhoods(function (error, neighborhoods) {
 		if (error) {
 			// Got an error
@@ -32,7 +32,7 @@ function fetchNeighborhoods() {
 /**
  * Set neighborhoods HTML.
  */
-function fillNeighborhoodsHTML() {
+fillNeighborhoodsHTML = function fillNeighborhoodsHTML() {
 	var neighborhoods = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.neighborhoods;
 
 	var select = document.getElementById('neighborhoods-select');
@@ -47,7 +47,7 @@ function fillNeighborhoodsHTML() {
 /**
  * Fetch all cuisines and set their HTML.
  */
-function fetchCuisines() {
+fetchCuisines = function fetchCuisines() {
 	DBHelper.fetchCuisines(function (error, cuisines) {
 		if (error) {
 			// Got an error!
@@ -62,7 +62,7 @@ function fetchCuisines() {
 /**
  * Set cuisines HTML.
  */
-function fillCuisinesHTML() {
+fillCuisinesHTML = function fillCuisinesHTML() {
 	var cuisines = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.cuisines;
 
 	var select = document.getElementById('cuisines-select');
@@ -105,7 +105,7 @@ window.initMap = function () {
 /**
  * Update page and map for current restaurants.
  */
-function updateRestaurants() {
+updateRestaurants = function updateRestaurants() {
 	var cSelect = document.getElementById('cuisines-select');
 	var nSelect = document.getElementById('neighborhoods-select');
 
@@ -129,7 +129,7 @@ function updateRestaurants() {
 /**
  * Clear current restaurants, their HTML and remove their map markers.
  */
-function resetRestaurants(restaurants) {
+resetRestaurants = function resetRestaurants(restaurants) {
 	// Remove all restaurants
 	self.restaurants = [];
 	var ul = document.getElementById('restaurants-list');
@@ -146,7 +146,7 @@ function resetRestaurants(restaurants) {
 /**
  * Create all restaurants HTML and add them to the webpage.
  */
-function fillRestaurantsHTML() {
+fillRestaurantsHTML = function fillRestaurantsHTML() {
 	var restaurants = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.restaurants;
 
 	var ul = document.getElementById('restaurants-list');
@@ -159,7 +159,7 @@ function fillRestaurantsHTML() {
 /**
  * Create restaurant HTML.
  */
-function createRestaurantHTML(restaurant) {
+createRestaurantHTML = function createRestaurantHTML(restaurant) {
 	var li = document.createElement('li');
 
 	var image = document.createElement('img');
@@ -195,7 +195,7 @@ function createRestaurantHTML(restaurant) {
 /**
  * Add markers for current restaurants to the map.
  */
-function addMarkersToMap() {
+addMarkersToMap = function addMarkersToMap() {
 	var restaurants = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.restaurants;
 
 	restaurants.forEach(function (restaurant) {

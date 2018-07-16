@@ -202,7 +202,7 @@ var DBHelper = function () {
 	}, {
 		key: 'imageUrlForRestaurant',
 		value: function imageUrlForRestaurant(restaurant) {
-			return './img/' + restaurant.photograph;
+			return '/img/' + restaurant.photograph;
 		}
 
 		/**
@@ -212,7 +212,7 @@ var DBHelper = function () {
 	}, {
 		key: 'thumbnailUrlForRestaurant',
 		value: function thumbnailUrlForRestaurant(restaurant) {
-			return './img/' + restaurant.thumbnail;
+			return '/img/' + restaurant.thumbnail;
 		}
 
 		/**
@@ -224,7 +224,7 @@ var DBHelper = function () {
 		value: function mapMarkerForRestaurant(restaurant, map) {
 			var marker = new google.maps.Marker({
 				position: restaurant.latlng,
-				icon: './img/restaurant-icon.png',
+				icon: '../img/restaurant-icon.png',
 				title: restaurant.name,
 				url: DBHelper.urlForRestaurant(restaurant),
 				map: map,
@@ -241,7 +241,8 @@ var DBHelper = function () {
     * Change this to restaurants.json file location on your server.
     */
 		get: function get() {
-			return './data/restaurants.json';
+			var port = 3000; // Change this to your server port
+			return 'http://localhost:' + port + '/data/restaurants.json';
 		}
 	}]);
 

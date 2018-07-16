@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurant-reviews-v13.0';
+const staticCacheName = 'restaurant-reviews-v17.0';
 const urlsToCache = [
 	'/',
 	'css/styles.css',
@@ -51,16 +51,18 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-	caches.keys().then((cacheNames) => {
-		return Promise.all(
-			cacheNames.filter((cacheName) => {
-				return cacheName.startsWith('restaurant-') &&
-				cacheName != staticCacheName;
-			}).map((cacheName) => {
-				return caches.delete(cacheName);
-			})
-		);
-	});
+	event.waitUntil(
+		caches.keys().then((cacheNames) => {
+			return Promise.all(
+				cacheNames.filter((cacheName) => {
+					return cacheName.startsWith('restaurant-') &&
+					cacheName != staticCacheName;
+				}).map((cacheName) => {
+					return caches.delete(cacheName);
+				})
+			);
+		})
+	);
 });
 
 self.addEventListener('fetch', (event) => {
