@@ -8,7 +8,8 @@ window.initMap = () => {
 	fetchRestaurantFromURL((error, restaurant) => {
 		if (error) { // Got an error!
 			console.error(error);
-		} else {
+		} 
+		else if (navigator.onLine) {
 			self.map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 16,
 				center: restaurant.latlng,
@@ -19,6 +20,12 @@ window.initMap = () => {
 			google.maps.event.addListenerOnce(map, 'idle', () => {
 				document.getElementsByTagName('iframe')[0].title = 'Restaurant on Google Maps';
 			});
+		} 
+		else {
+			const map = document.getElementById('map');
+			const staticMap = document.createElement('div');
+			map.appendChild(staticMap);
+			staticMap.classList.add('offline-map');
 		}
 	});
 };
@@ -56,8 +63,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 	name.innerHTML = restaurant.name;
 
 	const address = document.getElementById('restaurant-address');
-  address.innerHTML = restaurant.address;
-  address.setAttribute('aria-label', 'Address' + restaurant.address);
+	address.innerHTML = restaurant.address;
+	address.setAttribute('aria-label', 'Address' + restaurant.address);
 
 	const image = document.getElementById('restaurant-img');
 	image.className = 'restaurant-img';
