@@ -34,7 +34,7 @@ window.initMap = function () {
 /**
  * Get current restaurant from page URL.
  */
-fetchRestaurantFromURL = function fetchRestaurantFromURL(callback) {
+function fetchRestaurantFromURL(callback) {
 	if (self.restaurant) {
 		// restaurant already fetched!
 		callback(null, self.restaurant);
@@ -61,7 +61,7 @@ fetchRestaurantFromURL = function fetchRestaurantFromURL(callback) {
 /**
  * Create restaurant HTML and add it to the webpage
  */
-fillRestaurantHTML = function fillRestaurantHTML() {
+function fillRestaurantHTML() {
 	var restaurant = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.restaurant;
 
 	var name = document.getElementById('restaurant-name');
@@ -91,7 +91,7 @@ fillRestaurantHTML = function fillRestaurantHTML() {
 /**
  * Create restaurant operating hours HTML table and add it to the webpage.
  */
-fillRestaurantHoursHTML = function fillRestaurantHoursHTML() {
+function fillRestaurantHoursHTML() {
 	var operatingHours = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.restaurant.operating_hours;
 
 	var hours = document.getElementById('restaurant-hours');
@@ -113,7 +113,7 @@ fillRestaurantHoursHTML = function fillRestaurantHoursHTML() {
 /**
  * Create all reviews HTML and add them to the webpage.
  */
-fillReviewsHTML = function fillReviewsHTML() {
+function fillReviewsHTML() {
 	var reviews = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.restaurant.reviews;
 
 	var container = document.getElementById('reviews-container');
@@ -139,7 +139,7 @@ fillReviewsHTML = function fillReviewsHTML() {
 /**
  * Create review HTML and add it to the webpage.
  */
-createReviewHTML = function createReviewHTML(review) {
+function createReviewHTML(review) {
 	var li = document.createElement('li');
 	var name = document.createElement('p');
 	name.innerHTML = review.name;
@@ -165,7 +165,7 @@ createReviewHTML = function createReviewHTML(review) {
 /**
  * Add restaurant name to the breadcrumb navigation menu
  */
-fillBreadcrumb = function fillBreadcrumb() {
+function fillBreadcrumb() {
 	var restaurant = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : self.restaurant;
 
 	var breadcrumb = document.getElementById('breadcrumb');
@@ -177,7 +177,7 @@ fillBreadcrumb = function fillBreadcrumb() {
 /**
  * Get a parameter by name from page URL.
  */
-getParameterByName = function getParameterByName(name, url) {
+function getParameterByName(name, url) {
 	if (!url) url = window.location.href;
 	name = name.replace(/[\[\]]/g, '\\$&');
 	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
