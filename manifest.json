@@ -1,7 +1,7 @@
 {
   "name": "Restaurant Reviews",
   "short_name": "Restaurants",
-  "start_url": "/index.html",
+  "start_url": "/restaurant-reviews-app/index.html",
   "icons": [
     {
       "src": "img/icons/icon_48x48.png",
